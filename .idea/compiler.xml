@@ -7,17 +7,25 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="hm-service" />
-        <module name="hm-item" />
+        <module name="trade-service" />
         <module name="hm-common" />
+        <module name="hm-item" />
+        <module name="hm-cart" />
+        <module name="hm-user" />
+        <module name="hm-service" />
+        <module name="hm-api" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="hm-api" options="-parameters" />
+      <module name="hm-cart" options="-parameters" />
       <module name="hm-common" options="-parameters" />
       <module name="hm-item" options="-parameters" />
       <module name="hm-service" options="-parameters" />
+      <module name="hm-user" options="-parameters" />
+      <module name="trade-service" options="-parameters" />
     </option>
   </component>
 </project>
